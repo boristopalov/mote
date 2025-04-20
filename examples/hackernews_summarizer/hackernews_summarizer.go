@@ -33,7 +33,6 @@ type Article struct {
 	Summary string
 }
 
-// callLLM simulates calling a language model to summarize content.
 func callLLM(ctx context.Context, client *genai.Client, content string) (string, error) {
 	if content == "" {
 		return "[Summary: Empty content]", nil
